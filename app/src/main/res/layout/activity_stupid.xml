@@ -5,17 +5,22 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".StupidActivity"
     android:backgroundTint="#ff7ff9"
-    android:id="@+id/">
+    android:id="@+id/appBackground">
 
     <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/stupidWords" />
+        android:id="@+id/sillyWords"
+        android:textSize="45dp"
+        android:textIsSelectable="true"
+        android:layout_above="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hi"
-        android:id="@+id/button"
+        android:id="@+id/sillybutton"
         android:textColor="#ff0000"
         android:backgroundTint="#8cff06"
         android:layout_centerVertical="true"
@@ -28,7 +33,7 @@
         android:text="Name"
         android:ems="10"
         android:id="@+id/editText"
-        android:layout_above="@+id/button"
+        android:layout_above="@+id/sillybutton"
         android:layout_centerHorizontal="true" />
 
     <EditText
@@ -37,7 +42,7 @@
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/editText2"
-        android:layout_below="@+id/button"
+        android:layout_below="@+id/sillybutton"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
