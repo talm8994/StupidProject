@@ -69,12 +69,27 @@ public class StupidActivity extends AppCompatActivity {
                 colorChangeButton.setBackgroundColor(Color.rgb(redColor, greenColor, blueColor));
     }
 
+    private void changeVisabality()
+    {
+        sillyWords.setVisibility(View.GONE);
+        {
+        if(sillyWords.getVisibility() == View.GONE)
+
+
+        }
+        else
+        {
+            sillyWords.setVisibility(View.GONE);
+        }
+    }
+
     private void setupListeners() {
         colorChangeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View ButtonView) {
                 // This is were you put code that happens when you click a button
                 changeColors();
+                changeVisabality();
             }
 
 
